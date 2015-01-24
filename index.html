@@ -1,5 +1,22 @@
-<html>
-<!-- Latest compiled and minified CSS -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Emergency Responder</title>
+		<meta name="description" content="Emergency Responder " />
+		<meta name="keywords" content="Emergency Responder ,fire,police,ambulance" />
+		<meta name="author" content="Project" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
 <!-- Optional theme -->
@@ -7,27 +24,151 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<body>
-	<div class="well">
-		<div role="tabpanel">
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
+<!-- For jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
-  </div>
-
-</div>
-	</div>
-</body>
+	
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<div class="page-header">
+				<h1>Emergency Responder<br>
+				<small>Tool to track the victim as early as possible</small>
+				</h1>
+				</div>
+			</header>	
+			<div id="tabs" class="tabs">
+				<nav>
+					<ul>
+						<li><a href="#section-1" >100<br>Police Emergency<span class="badge"></span></a></li>
+						<li><a href="#section-2" >101<br>Fire Emergency<span class="badge"></span></a></li>
+						<li><a href="#section-3" >102<br>Ambulance Emergency<span class="badge"></span></a></li>
+					</ul>
+				</nav>
+				<div class="content">
+					<section id="section-1">
+						<table class="table table-hover">
+						  <thead>
+							<tr>
+							  <th>#</th>
+							  <th>UserId</th>
+							  <th>Request Received at</th>
+							  <th>Latitude</th>
+							  <th>Longitude</th>
+							</tr>
+						  </thead>
+						  <!--Sample data-->
+						  <tbody>
+							<tr>
+							  <th scope="row">1</th>
+							  <td>A112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+							<tr>
+							   <th scope="row">2</th>
+							  <td>A112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+							<tr>
+							   <th scope="row">3</th>
+							  <td>A112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+						  </tbody>
+						</table>
+						
+						</section>
+					<section id="section-2">
+						<table class="table table-hover">
+						  <thead>
+							<tr>
+							  <th>#</th>
+							  <th>UserId</th>
+							  <th>Request Received at</th>
+							  <th>Latitude</th>
+							  <th>Longitude</th>
+							</tr>
+						  </thead>
+						  <!--Sample data-->
+						  <tbody>
+							<tr>
+							  <th scope="row">1</th>
+							  <td>B112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+							<tr>
+							   <th scope="row">2</th>
+							  <td>B112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+							<tr>
+							   <th scope="row">3</th>
+							  <td>B112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+						  </tbody>
+						</table>
+					</section>
+					<section id="section-3">
+						<table class="table table-hover">
+						  <thead>
+							<tr>
+							  <th>#</th>
+							  <th>UserId</th>
+							  <th>Request Received At</th>
+							  <th>Latitude</th>
+							  <th>Longitude</th>
+							</tr>
+						  </thead>
+						  <!--Sample data-->
+						  <tbody>
+							<tr>
+							  <th scope="row">1</th>
+							  <td>C112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+							<tr>
+							   <th scope="row">2</th>
+							  <td>C112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+							<tr>
+							   <th scope="row">3</th>
+							  <td>C112</td>
+							  <td>05:30:31</td>
+							  <td>34.23</td>
+							  <td>34.23</td>
+							</tr>
+						  </tbody>
+						</table>
+					</section>
+					
+				</div><!-- /content -->
+			</div><!-- /tabs -->
+			<p class="info">Apogee Project Prototype</p>
+		</div>
+		
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+	</body>
 </html>
