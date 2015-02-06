@@ -47,6 +47,7 @@ a:hover {
 	margin: 0 0 0.6em 0;
 	float: center;
 	font-weight: 400;
+	text-align: center;
 }
 
 .container > header > span {
