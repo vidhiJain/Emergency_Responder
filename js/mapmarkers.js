@@ -1,44 +1,27 @@
-/*$(function() {
-$.getJSON('datafromserver.json',function(data){
-	$.each(data.victim,function(to be completed*/
+var map;var poly;var json;
+var VictimLatLng;var ResponderLatLng;
 function initialize() {
-  var VictimLatlng = new google.maps.LatLng(-25.363882,131.044922);
-  var ResponderLatlng = new google.maps.LatLng(-28.363882,131.044922);
+  var ResponderLatLng = new google.maps.LatLng(-28.363882,131.044922);
   var mapOptions = {
     zoom: 7,
-    center: VictimLatlng
+    center: VictimLatLng
   };
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
   var image='img/victim.png';
-  var ResponderMarker = new google.maps.Marker({
-      position: VictimLatlng,
+  var VictimMarker = new google.maps.Marker({
+      position: VictimLatLng,
       map: map,
 	  icon: image,
       title: 'Victim'
   });
   var image='img/responder.png';
   var ResponderMarker = new google.maps.Marker({
-      position: ResponderLatlng,
+      position: ResponderLatLng,
       map: map,
 	  icon: image,
       title: 'Responder'
   });
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-
-
-/*var poly;
-var map;
-
-function initialize() {
-  var mapOptions = {
-    zoom: 7,
-    // Center the map on Chicago, USA.
-    center: new google.maps.LatLng(41.879535, -87.624333)
-  };
-
-  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
   var polyOptions = {
     strokeColor: '#000000',
@@ -50,12 +33,12 @@ function initialize() {
 
   // Add a listener for the click event
   google.maps.event.addListener(map, 'click', addLatLng);
-}
+  }
 
-/**
+/*
  * Handles click events on a map, and adds a new point to the Polyline.
  * @param {google.maps.MouseEvent} event
- *//*
+ */
 function addLatLng(event) {
 
   var path = poly.getPath();
@@ -72,4 +55,4 @@ function addLatLng(event) {
   });
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);*/
+google.maps.event.addDomListener(window, 'load', initialize);
